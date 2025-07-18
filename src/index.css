@@ -1,1 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 @import "tailwindcss";
+
+@theme {
+    --color-primary: #881C16;
+    
+
+    --color-primary-hover: #5C120E;
+    --color-text-hover: #23262A;
+
+    --font-inter: 'Inter', sans-serif;
+    --breakpoint-sm: 320px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 1250px;
+}
+
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+    font-family: var(--font-inter);
+    scroll-behavior: smooth;
+  }
+  

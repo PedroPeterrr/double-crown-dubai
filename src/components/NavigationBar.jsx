@@ -4,6 +4,9 @@ function NavigationBar() {
     const [menuOpen, setMenuOpen] = useState(false)
      const toggleMenu = () => setMenuOpen(o => !o)
 
+    const handleLinkClick = () => {
+      setMenuOpen(false)
+    }
     const navItems = ['HOME', 'SERVICES', 'ABOUT', 'PROJECTS', 'CONTACT']
 
     return (
@@ -63,6 +66,7 @@ function NavigationBar() {
                 {navItems.map(item => (
                 <li key={item}>
                     <a
+                    onClick={handleLinkClick}
                     className={`
                         text-[10px] md:text-lg
                         block w-full p-2 transition-colors duration-150

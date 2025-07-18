@@ -7,6 +7,7 @@ function LandingPage() {
     <main className="flex flex-col">
         <NavigationBar />
         <Hero />
+        <Services  />
     </main>
   );
 }

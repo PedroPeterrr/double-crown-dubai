@@ -54,7 +54,7 @@ const Services = () => {
     <section
       id="services"
       className="bg-primary opacity-95 flex flex-col justify-center items-center 
-      p-15 gap-8 overflow-hidden
+      p-12 gap-8 overflow-hidden
       md:gap-10"
     >
       <h1 className="text-white text-[16px] font-bold text-center

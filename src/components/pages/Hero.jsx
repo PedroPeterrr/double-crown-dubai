@@ -41,7 +41,8 @@ function Hero(){
             >   
                 <span className="text-sm mb-2">Scroll</span>
                 
-                <a href="#services">
+                <a href="#services"
+                    aria-label="Scroll to Services section">
                     <ArrowDownIcon className="h-5 w-5" />
                 </a>
             </div>

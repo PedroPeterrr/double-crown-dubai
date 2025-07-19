@@ -42,7 +42,7 @@ function Hero(){
                 <span className="text-sm mb-2">Scroll</span>
                 
                 <a href="#services">
-                    <ArrowDownIcon className="h-5 w-5 animate-bounce" />
+                    <ArrowDownIcon className="h-5 w-5" />
                 </a>
             </div>
         </section>

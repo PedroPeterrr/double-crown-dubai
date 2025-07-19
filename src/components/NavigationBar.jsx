@@ -2,22 +2,18 @@ import { useState } from 'react'
 
 function NavigationBar() { 
     const [menuOpen, setMenuOpen] = useState(false)
-     const toggleMenu = () => setMenuOpen(o => !o)
 
-    const handleLinkClick = () => {
-      setMenuOpen(false)
-    }
     const navItems = ['HOME', 'SERVICES', 'ABOUT', 'PROJECTS', 'CONTACT']
 
     return (
         <nav className="
-            sticky top-0 bg-primary text-white p-6 flex items-center justify-end
+            fixed w-full top-0 bg-primary text-white p-6 flex items-center justify-end
             font-semibold z-1000
         ">
 
             <button
                 id="hamburgerMenuButton"
-                onClick={toggleMenu}
+                onClick={() => setMenuOpen(prev => !prev)}
                 className="flex flex-col justify-center items-center 
                 w-5 h-5 bg-transparent 
                 border-none cursor-pointer 
@@ -52,13 +48,12 @@ function NavigationBar() {
                 className={`
                 ${menuOpen ? 'flex' : 'hidden'}
                 absolute top-full left-0 w-full
-                flex-col origin-top transform
-                transition-transform duration-500 ease-out
+                flex-col origin-top
                 bg-white   
                 overflow-hidden
 
-                md:static md:flex md:transform-none md:scale-y-100 md:overflow-visible
-                 md:bg-transparent
+                md:static md:flex md:overflow-visible
+                md:bg-transparent
                 md:flex-row md:p-0 md:justify-center md:gap-10
                 lg:justify-end lg:pr-6
                 `}
@@ -66,7 +61,7 @@ function NavigationBar() {
                 {navItems.map(item => (
                 <li key={item}>
                     <a
-                    onClick={handleLinkClick}
+                    onClick={() => setMenuOpen(false)}
                     className={`
                         text-[10px] md:text-lg
                         block w-full p-2 transition-colors duration-150

@@ -11,7 +11,10 @@ function About(){
         backgroundBlendMode: "overlay",
       }}
         >   
-            <div className="p-15 flex flex-col lg:w-3/5 gap-5 md:gap-8 lg:gap-10 text-wrap">
+            <div className="p-5 flex flex-col gap-5 text-wrap
+                md:gap-8 md:p-10 
+                lg:w-3/5 lg:gap-10 lg:p-15 "
+            >
                 <h1 className="text-white font-extrabold after:mt-5
                     text-4xl md:text-5xl lg:text-6xl
                     after:content-[''] after:h-1.5 after:rounded 

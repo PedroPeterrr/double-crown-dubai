@@ -1,6 +1,8 @@
-import ArrowDownIcon from "../../assets/icons/ArrowDownIcon";
-import Building from "../../assets/image/Building.png"
-import logo from "../../assets/logo/Double-Crown-Logo.png"
+import {
+    Building,
+    ArrowDownIcon,
+    Logo
+} from "../../assets/assest";
 
 function Hero(){
     return(
@@ -11,7 +13,7 @@ function Hero(){
         >
                 <div className="flex flex-col items-center gap-2">
                     <img 
-                        src={logo} 
+                        src={Logo} 
                         alt="Double Crowns Logo" 
                         className="w-60 md:w-70 lg:w-100"
                     />

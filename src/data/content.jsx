@@ -21,3 +21,9 @@ export const services = [
     image: Cap,
 }
 ];
+
+export const statistics = [
+  { value: '2014', lines: ['Year', 'Established'] },
+  { value: '9',   lines: ['Projects', 'Completed'] },
+  { value: '40',  lines: ['Contractors', 'Appointed'] },
+];

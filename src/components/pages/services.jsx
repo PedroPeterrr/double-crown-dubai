@@ -10,7 +10,7 @@ const Services = () => {
       p-12 gap-8 overflow-hidden
       md:gap-10"
     >
-      <h1 className="text-white text-[16px] font-bold text-center
+      <h1 className="text-white text-4xl font-bold text-center
         md:text-5xl lg:text-6xl"
       >
         SERVICES

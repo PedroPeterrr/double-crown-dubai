@@ -15,12 +15,12 @@
 }
 
 html {
-  scroll-padding-top: 5.7rem;
+  scroll-padding-block-start: 5.5rem;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 767px) {
   html {
-    scroll-padding-top: 3rem;
+    scroll-padding-block-start: 4.25rem;
   }
 }
 
@@ -32,3 +32,9 @@ html {
     scroll-behavior: smooth;
   }
   
+@layer components {
+  .hamburgerMenuButton-bar {
+    @apply block w-full h-[2px] bg-white mt-1
+      transition-transform duration-300 ease-in-out
+  }
+}

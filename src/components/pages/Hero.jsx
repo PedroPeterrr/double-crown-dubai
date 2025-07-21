@@ -1,6 +1,7 @@
+import { ArrowDown } from "lucide-react";
+
 import {
     Building,
-    ArrowDownIcon,
     Logo
 } from "../../assets/assest";
 
@@ -45,7 +46,7 @@ function Hero(){
                 
                 <a href="#services"
                     aria-label="Scroll to Services section">
-                    <ArrowDownIcon className="h-5 w-5" />
+                    <ArrowDown className="h-5 w-5" />
                 </a>
             </div>
         </section>
